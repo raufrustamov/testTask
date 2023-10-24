@@ -1,0 +1,41 @@
+
+1. Functional Tests:
+   - Test pencil writing on different papers.
+   - Test eraser on pencil marks. Look for smudges.
+   - Check if pencil tip breaks easily.
+   - See if wood breaks during sharpening.
+
+2. Usability Tests:
+   - Get feedback on how comfortable the pencil feels.
+   - Check if it’s a good size and shape.
+   - Test if eraser is easy to use.
+
+3. Performance Tests:
+   - See if the pencil writes evenly.
+   - Test if eraser removes marks well.
+   - Check how long the pencil and eraser last.
+
+4. Load Test:
+   - Write and erase a lot to check its endurance.
+
+5. Stress Tests:
+   - Drop the pencil to see if it breaks.
+   - Write and erase with force to test strength.
+
+6. Environmental Tests:
+   - Test the pencil in hot and cold temperatures.
+   - Check the pencil in damp conditions.
+
+7. Safety Test:
+   - Make sure the pencil and eraser materials are safe.
+
+8. Compatibility Tests:
+   - See if it sharpens with different sharpeners.
+   - Test writing and erasing on different papers.
+
+9. Recovery Test:
+   - Check if you can keep using the pencil after the tip breaks.
+
+10. Accessibility Tes*:
+    - Make sure people with disabilities can use it.
+
