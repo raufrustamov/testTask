@@ -1,0 +1,18 @@
+
+User Behavior: This method shows products based on what the user has looked at or bought before.
+
+New Products or Featured Items: Websites often highlight new or special products for business reasons. This could be because of deals with suppliers, managing inventory, or following seasonal trends.
+
+Sales and Discounts: Products that are on sale or have discounts are shown more to attract users.
+
+Related Products: For example, if a user is looking at a phone, they might see suggestions for cases or screen protectors. This is called cross-selling.
+
+More Expensive Products: Upselling means suggesting a more costly item or a better version of what the user is looking at.
+
+What the User Has Looked At Before: Products the user or similar users have looked at a lot might be recommended.
+
+What the User Has Bought Before: The system might suggest products related to past purchases.
+
+Business Rules: Some products might be shown more because of business deals or how many are in stock.
+
+Personalization: As the system learns more about what the user does, the suggestions become more tailored. This includes data on how long the user looks at products, which products they click on, and their search history.
