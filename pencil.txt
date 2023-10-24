@@ -36,6 +36,6 @@
 9. Recovery Test:
    - Check if you can keep using the pencil after the tip breaks.
 
-10. Accessibility Tes*:
+10. Accessibility Test:
     - Make sure people with disabilities can use it.
 
