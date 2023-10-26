@@ -20,18 +20,17 @@ public class QualityAssurance extends BasePage {
 
   public static final By seeAllTeams = By.xpath("//*[@id='page-head']//a[contains(text(),'See all QA jobs')]");
   public static final By filterByLocation = By.xpath("//*[@id='select2-filter-by-location-container']");
-
   public static final By locationIstanbul = By.xpath("//*[@id='select2-filter-by-location-results']//li[contains(text(),'Istanbul, Turkey')]");
-
-
   public static final By jobList = By.xpath("//*[@id='jobs-list']");
   public static final By cookiesAccept = By.xpath("//*[@id='wt-cli-accept-all-btn']");
-
   public static final By position = By.cssSelector(".position-list-item .position-title.font-weight-bold");
   public static final By department = By.cssSelector(".position-list-item .position-department.text-large.font-weight-600.text-primary");
   public static final By jobsLocation = By.cssSelector(".position-list-item .position-location.text-large");
-
   public static final By viewRole = By.xpath("//*[@id='jobs-list']//a[contains(text(),'View Role')]");
+  public static final By jobSection = By.cssSelector(".position-location.text-large");
+
+
+  
     public QualityAssurance clickOnSeeAll() throws InterruptedException {
     driver.findElement(cookiesAccept).click();
     driver.findElement(seeAllTeams).click();
@@ -62,5 +61,37 @@ public class QualityAssurance extends BasePage {
       textContents.add(textContent);
     }
     return textContents;
+  }
+
+   public QualityAssurance switchToNewTab(String originalWindowHandle) {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+    wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+
+    for (String windowHandle : driver.getWindowHandles()) {
+      if (!originalWindowHandle.equalsIgnoreCase(windowHandle)) {
+        driver.switchTo().window(windowHandle);
+        break;
+      }
+    }
+    return this;
+  }
+
+  public QualityAssurance clickOnViewROle() {
+    WebElement viewRoleButton = driver.findElement(By.partialLinkText("View Role"));
+    viewRoleButton.click();
+    return this;
+  }
+
+  public String currentWinwod() {
+    return driver.getWindowHandle();
+  }
+
+  public QualityAssurance moveToELement(WebElement element) throws InterruptedException {
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    int elementPosition = element.getLocation().getY();
+    String jsScript = "window.scroll(0, " + (elementPosition - (driver.manage().window().getSize().getHeight() / 2)) + ");";
+    js.executeScript(jsScript);
+    Thread.sleep(300);
+    return this;
   }
 }
